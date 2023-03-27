@@ -15,7 +15,7 @@ const Header = () => {
                 <Menu />
             </div>
             <div className="header__col flex items-center justify-end">
-                <button className="absolute top-16 right-0text-white hover:text-custom-yellow">
+                <button className="absolute top-16 right-0 text-white hover:text-custom-yellow">
                     Donate
                 </button>
             </div>

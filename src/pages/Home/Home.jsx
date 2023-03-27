@@ -1,7 +1,9 @@
+import SuperHero from './components/Superhero';
+
 const Home = () => {
     return (
         <div className="home">
-            <h1>Holotas</h1>
+            <SuperHero />
         </div>
     );
 };

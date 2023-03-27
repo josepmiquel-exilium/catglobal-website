@@ -1,0 +1,16 @@
+.myparticles {
+    canvas {
+        position: relative !important;
+        width: 100% !important;
+        height: 400px !important;
+        // width: 100px !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .myparticles {
+        canvas {
+            display: none;
+        }
+    }
+}

@@ -11,7 +11,7 @@ const Menu = () => {
                 onClick={() => setShowMenu(!showMenu)}
             />
             {showMenu && (
-                <ul className="flex flex-col gap-8 absolute bg-custom-black h-[100vh] top-0 -right-4 px-8 py-24 w-[60%] z-[998]">
+                <ul className="flex flex-col gap-8 absolute bg-custom-black h-[100vh] top-0 -right-4 px-8 py-24 w-[80%] z-[998]">
                     <li className="hover:text-custom-yellow">What is Catglobal</li>
                     <li className="hover:text-custom-yellow">Technologies</li>
                     <li className="hover:text-custom-yellow">Help us</li>

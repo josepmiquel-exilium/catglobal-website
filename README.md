@@ -6,8 +6,8 @@ Entirely built by me <3
 
 # Getting Started 
 
-### `npm install` to install dependencies
-### modify .env.example and rename to .env
+1) ### `npm install` to install dependencies
+2) ### modify .env.example and rename to .env
 
 ## Available Scripts
 

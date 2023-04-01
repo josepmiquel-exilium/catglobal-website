@@ -1,6 +1,8 @@
-The frontend of my company has been developed using pure React and Tailwind CSS, with no reliance on any UI components library. The design is clean, minimal, and professional, and has been crafted entirely by me. I'm pleased to offer the source code to you, with full permission to use and make modifications as desired.
+The frontend of my company has been developed using pure React and Tailwind CSS, without relying on any UI components library. This has resulted in a clean, minimal, and professional design which I am pleased to offer as open source code. You are free to use and modify the code as needed, with my full permission.
 
-The donation form has been specifically developed to operate with Stripe. If you are using an alternative payment gateway, modify the form to work with their API.
+Please note that the donation form has been specifically developed to work with Stripe. In case you are using a different payment gateway, you will need to modify the form to work with their API.
+
+Entirely built by me <3
 
 # Getting Started 
 

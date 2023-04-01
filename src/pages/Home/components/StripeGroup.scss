@@ -1,0 +1,14 @@
+@import '/src/sass/variables.scss';
+
+.stripegroup {
+    position: relative;
+    .stripegroup__highlight {
+        background-color: $custom-yellow;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: all 0.3s;
+        width: 0;
+    }
+}

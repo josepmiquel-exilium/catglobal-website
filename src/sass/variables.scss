@@ -1,0 +1,9 @@
+$custom-black: #000000;
+$custom-yellow: #fca311;
+$custom-darkgray: #505050;
+
+:export {
+    custom-black: $custom-black;
+    custom-yellow: $custom-yellow;
+    custom-darkgray: $custom-darkgray;
+}

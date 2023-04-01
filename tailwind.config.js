@@ -6,6 +6,7 @@ module.exports = {
             colors: {
                 'custom-black': '#000000',
                 'custom-yellow': '#fca311',
+                'custom-darkgray': '#505050',
             },
         },
     },

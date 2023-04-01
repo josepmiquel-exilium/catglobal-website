@@ -1,4 +1,4 @@
-import useIsPhone from 'hooks/isPhone';
+import useIsPhone from 'hooks/useIsPhone';
 import { useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 

@@ -1,3 +1,4 @@
+import Donations from './components/Donations';
 import Services from './components/Services';
 import SuperHero from './components/Superhero';
 
@@ -10,6 +11,10 @@ const Home = () => {
 
             <section>
                 <Services />
+            </section>
+
+            <section>
+                <Donations />
             </section>
         </div>
     );

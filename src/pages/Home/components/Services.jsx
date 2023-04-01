@@ -1,3 +1,4 @@
+import SectionTitle from 'shared/SectionTitle';
 import ServiceCard from './ServiceCard';
 
 const data = [
@@ -20,10 +21,13 @@ const data = [
 
 const Services = () => {
     return (
-        <div className="services md:grid grid-cols-3">
-            {data.map((e, key) => (
-                <ServiceCard title={e.title} description={e.description} key={key} />
-            ))}
+        <div className="services ">
+            <SectionTitle title={'Our services'} />
+            <div className="services__inner md:grid grid-cols-3">
+                {data.map((e, key) => (
+                    <ServiceCard title={e.title} description={e.description} key={key} />
+                ))}
+            </div>
         </div>
     );
 };

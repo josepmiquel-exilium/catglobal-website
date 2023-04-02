@@ -30,7 +30,7 @@ const Menu = () => {
             )}
             {showMenu && (
                 <ul
-                    className={`flex flex-col gap-8 absolute bg-black h-[100vh] top-0 left-0 px-8 py-24 w-[100vw] z-[998] items-center justify-center transition-all duration-300`}
+                    className={`flex flex-col gap-8 absolute bg-black h-[100vh] top-0 left-[-15px] sm:left-[-46px] lg:left-[-95px] px-8 py-24 w-[100vw] z-[998] items-center justify-center transition-all duration-300`}
                 >
                     <li className={liClass} onClick={() => navigateTo('superhero')}>
                         What is Catglobal

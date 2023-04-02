@@ -31,6 +31,8 @@ const StripeElements = () => {
 
     return (
         <div className="stripeelements flex flex-col gap-4">
+            <h2 className="text-xl">Card details</h2>
+
             <StripeGroup label={'Creditcard number'}>
                 <CardNumberElement
                     className="stripeelements__element"

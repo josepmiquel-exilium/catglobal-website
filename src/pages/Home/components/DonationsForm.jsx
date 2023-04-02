@@ -19,7 +19,7 @@ const DonationsForm = () => {
     };
 
     return (
-        <div className="donationsform flex flex-col gap-4 w-full">
+        <div className="donationsform flex flex-col gap-4 w-full mt-4">
             {step === 0 && (
                 <div className="donationsform__inputgroup flex flex-col gap-2">
                     <MyInput

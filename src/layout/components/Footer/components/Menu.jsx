@@ -1,26 +1,32 @@
-import useIsPhone from 'hooks/useIsPhone';
 import { useState } from 'react';
-import { AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineCloseCircle } from 'react-icons/ai';
 
 const Menu = () => {
     const [showMenu, setShowMenu] = useState(false);
-    const isPhone = useIsPhone();
-    const liClass = `${isPhone ? 'text-custom-black' : 'text-white'} hover:text-custom-yellow`;
+    const liClass = `text-2xl uppercase text-white hover:text-custom-yellow md:text-4xl`;
+    const toogleButtonClass = `transition-all duration-300 absolute top-4 right-0 text-3xl z-[999] hover:text-custom-yellow`;
 
     return (
         <div className="menu">
-            <AiOutlineMenu
-                className={`absolute top-4 right-0 text-3xl z-[999] ${
-                    showMenu && 'text-custom-black'
-                }`}
-                onClick={() => setShowMenu(!showMenu)}
-            />
+            {!showMenu ? (
+                <AiOutlineMenu
+                    className={toogleButtonClass}
+                    onClick={() => setShowMenu(!showMenu)}
+                />
+            ) : (
+                <AiOutlineCloseCircle
+                    className={toogleButtonClass}
+                    onClick={() => setShowMenu(!showMenu)}
+                />
+            )}
             {showMenu && (
-                <ul className="flex flex-col gap-8 absolute bg-white h-[100vh] top-0 -right-4 px-8 py-24 w-[80%] z-[998]">
+                <ul
+                    className={`flex flex-col gap-8 absolute bg-black h-[100vh] top-0 left-0 px-8 py-24 w-[100vw] z-[998] items-center justify-center transition-all duration-300`}
+                >
                     <li className={liClass}>What is Catglobal</li>
-                    <li className="hover:text-custom-yellow">Services</li>
-                    <li className="hover:text-custom-yellow">Help us</li>
-                    <li className="hover:text-custom-yellow">Contact</li>
+                    <li className={liClass}>Services</li>
+                    <li className={liClass}>Help us</li>
+                    <li className={liClass}>Contact</li>
                 </ul>
             )}
         </div>

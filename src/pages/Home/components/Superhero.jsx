@@ -1,6 +1,9 @@
+import { useContactContext } from 'hooks/useContactContext';
 import MyParticles from './MyParticles';
 
 const SuperHero = () => {
+    const { sendEmail } = useContactContext();
+
     return (
         <div className="superhero flex flex-col gap-12 md:grid md:grid-cols-2 md:gap-20">
             <div className="superhero__col flex flex-col gap-8 md:gap-16">
@@ -30,7 +33,10 @@ const SuperHero = () => {
                         <button className="bg-custom-yellow py-2 px-4 text-custom-black font-bold">
                             Donate
                         </button>
-                        <button className="border border-solid border-white py-2 px-4 font-bold">
+                        <button
+                            className="border border-solid border-white py-2 px-4 font-bold"
+                            onClick={sendEmail}
+                        >
                             Contact
                         </button>
                     </div>

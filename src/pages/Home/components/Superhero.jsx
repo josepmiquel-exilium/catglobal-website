@@ -1,4 +1,5 @@
 import { useContactContext } from 'hooks/useContactContext';
+import scrollToElement from 'utils/scrollToElement';
 import MyParticles from './MyParticles';
 
 const SuperHero = () => {
@@ -30,11 +31,14 @@ const SuperHero = () => {
                         </p>
                     </div>
                     <div className="superhero__actions flex gap-4">
-                        <button className="bg-custom-yellow py-2 px-4 text-custom-black font-bold">
+                        <button
+                            className="bg-custom-yellow py-2 px-4 text-custom-black font-bold hover:bg-white hover:text-custom-black"
+                            onClick={() => scrollToElement('donations')}
+                        >
                             Donate
                         </button>
                         <button
-                            className="border border-solid border-white py-2 px-4 font-bold"
+                            className="border border-solid border-white py-2 px-4 font-bold hover:border-custom-yellow hover:text-custom-yellow"
                             onClick={sendEmail}
                         >
                             Contact
